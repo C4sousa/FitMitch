@@ -1,38 +1,222 @@
-.App {
+h1 {
+  font-family: Futura;
+  font-size: 44px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+h4 {
+  font-family: Futura;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px;
+}
+
+h2 {
+  font-family: Futura;
+  font-size: 44px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+h3 {
+  font-family: Futura;
+  font-size: 28px;
+  font-weight: 500;
+  color: white;
+  padding-bottom: 32px;
+}
+
+p {
+  font-family: futura;
+  font-size: 16px;
+  color: white;
+  padding-bottom: 16px;
+  max-width: 730px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  background-color: black;
+  padding: 50px;
+  grid-area: header;
+}
+
+.header p {
+  margin-left: 24px;
+  padding: 0px;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-areas:
+    "header     header       header"
+    "cnt        cnt          sideBar"
+    "space      space        sideBar"
+    "container3 container3   container3"
+    "footer     footer       footer";
+}
+
+.navButtons {
+  display: flex;
+  align-items: center;
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+}
+
+.button_HowItWorks {
+  color: #4a90e2;
+  background-color: white;
+  border: none;
+  padding: 8px 32px;
+  font-family: futura;
+  font-size: 16px;
+}
+
+.cnt {
+  display: grid;
+  grid-area: cnt;
+  background-color: #4a90e2;
+  padding: 50px;
+}
+
+.bigPhone {
+  margin-left: auto;
+  padding-bottom: 50px;
+}
+
+.buyButtons img {
+  padding: 50px 32px 0 0;
+}
+
+.space {
+  display: flex;
+  grid-area: space;
+  background-image: url(img/Space.png);
+  padding: 400px 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.space img {
+  position: relative;
+  top: 20px;
+}
+
+.leftBoard {
+  width: 410px;
+  margin: auto 0 auto auto;
+}
+
+.leftBoard h2 {
+  margin: auto;
+}
+
+.leftBoard button {
+  border-radius: 35px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  width: 190px;
+  height: 64px;
+  margin: 4px;
+  padding: 0px;
+}
+
+.leftBoard p {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.cols {
+  display: flex;
+}
+
+.container3 {
+  display: grid;
+  grid-area: container3;
+  background-color: #4a90e2;
+  text-align: center;
+  padding: 50px;
+}
+
+.rightBigPhone {
+  position: absolute;
+  padding: 50px;
+  right: 0px;
+  top: 140px;
+}
+
+.WhatPeople {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.col {
+  background-color: white;
+  margin: 0 16px;
+  padding: 32px;
+  text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.col p,
+.col h4 {
+  color: #4a90e2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.newsletter h3 {
+  padding-top: 128px;
+  font-size: 44px;
+}
+
+.newsletter p {
+  text-align: center;
+  max-width: none;
+}
+
+.buttonsContain {
+}
+
+.newsletterButton1 {
+  border: none;
+  background-color: white;
+  color: grey;
+  padding: 32px;
+  width: 500px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.newsletterButton2 {
+  border: none;
+  background-color: white;
+  padding: 32px 80px;
+  margin: 0 0 32px 32px;
+  text-align: left;
+  color: #4a90e2;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+footer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-end;
+  background-color: black;
+  padding: 50px;
   color: white;
+  grid-area: footer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer img {
+  width: 36px;
+  margin-left: 16px;
 }
