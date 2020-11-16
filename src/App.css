@@ -4,14 +4,7 @@ h1 {
   font-weight: 700;
   color: white;
   text-align: center;
-  padding-bottom: 40px;
-}
-
-h4 {
-  font-family: Futura;
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0px;
+  padding-bottom: 80px;
 }
 
 h2 {
@@ -31,12 +24,28 @@ h3 {
   padding-bottom: 32px;
 }
 
+h4 {
+  font-family: Futura;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0px;
+  color: #4a90e2;
+}
+
+h6 {
+  font-family: Futura;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0px;
+  color: #4a90e2;
+}
+
 p {
   font-family: futura;
   font-size: 16px;
   color: white;
   padding-bottom: 16px;
-  max-width: 730px;
+  /* max-width: 730px; */
 }
 
 .header {
@@ -53,14 +62,19 @@ p {
   padding: 0px;
 }
 
+.logo {
+  width: 70px;
+  padding-right: 16px;
+}
+
 .mainContainer {
   display: grid;
   grid-template-areas:
-    "header     header       header"
-    "cnt        cnt          sideBar"
-    "space      space        sideBar"
-    "container3 container3   container3"
-    "footer     footer       footer";
+    "header"
+    "cnt"
+    "space"
+    "container3"
+    "footer";
 }
 
 .navButtons {
@@ -89,6 +103,10 @@ p {
   padding: 50px;
 }
 
+.cnt p {
+  max-width: 730px;
+}
+
 .bigPhone {
   margin-left: auto;
   padding-bottom: 50px;
@@ -111,6 +129,7 @@ p {
 .space img {
   position: relative;
   top: 20px;
+  width: 50%;
 }
 
 .leftBoard {
@@ -138,8 +157,20 @@ p {
   padding-bottom: 50px;
 }
 
+.nameJob {
+  position: relative;
+  bottom: -30px;
+}
+
 .cols {
   display: flex;
+  margin: auto;
+}
+
+.col img {
+  width: 100px;
+  position: absolute;
+  top: 2470px;
 }
 
 .container3 {
@@ -154,7 +185,7 @@ p {
   position: absolute;
   padding: 50px;
   right: 0px;
-  top: 140px;
+  top: 180px;
 }
 
 .WhatPeople {
@@ -168,9 +199,11 @@ p {
   text-align: left;
 }
 
-.col p,
-.col h4 {
+.col p {
   color: #4a90e2;
+  max-width: 355px;
+  margin: 0;
+  padding-bottom: 32px;
 }
 
 .newsletter h3 {
@@ -181,9 +214,6 @@ p {
 .newsletter p {
   text-align: center;
   max-width: none;
-}
-
-.buttonsContain {
 }
 
 .newsletterButton1 {
@@ -219,4 +249,67 @@ footer {
 footer img {
   width: 36px;
   margin-left: 16px;
+}
+
+/* @media (min-width: 1200px) {
+} */
+
+@media (max-width: 1280px) {
+  .bigPhone img {
+    width: 230px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .bigPhone img {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 375px) {
+  .header {
+    padding: 8px;
+  }
+  .navButtons {
+    display: none;
+  }
+  h6 {
+    display: none;
+  }
+
+  .cnt {
+    display: grid;
+    grid-area: cnt;
+    background-color: #4a90e2;
+    padding: 8px;
+  }
+
+  h3 {
+    font-family: Futura;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    font-family: futura;
+    font-size: 12px;
+    color: white;
+    max-width: none;
+  }
+  .buyButtons img {
+    padding: 16px 8px 0 0;
+    width: 100px;
+    margin-right: auto;
+  }
+
+  .space {
+    display: grid;
+    padding: 0 8px;
+  }
 }

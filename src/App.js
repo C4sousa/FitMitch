@@ -1,5 +1,5 @@
 import "./App.css";
-import Logo from "./img/Logo.png";
+import Logo from "./img/Logo.svg";
 import Background from "./img/Space.png";
 import Phones from "./img/Phones.png";
 import AppStore from "./img/App Store.png";
@@ -8,14 +8,17 @@ import ScreenPhone from "./img/Big_Phone.png";
 import Behance from "./img/Behance.svg";
 import Vimeo from "./img/Vimeo.svg";
 import Linkedin from "./img/Linkedin.svg";
+import Person1 from "./img/Person1.png";
+import Person2 from "./img/Person2.png";
+import Person3 from "./img/Person3.png";
 
 function App() {
   return (
     <div className="App mainContainer">
       <header className="header">
         <section className="leftSide">
-          <img src={Logo} alt="logo" />
-          <h4>Fit Mitch</h4>
+          <img src={Logo} alt="logo" className="logo" />
+          <h6>Fit Mitch Club</h6>
         </section>
         <section className="navButtons">
           <button class="button_HowItWorks">How it works</button>
@@ -75,31 +78,40 @@ function App() {
           <h1 className="WhatPeople">What People Say</h1>
           <div className="cols">
             <article className="col">
-              <img src="" alt="Person1" />
-              <p>
-                Is a simple but neat that allows you to completely control over
-                your workout.
-              </p>
-              <h4>ANNA SMITH</h4>
-              <p>Bodybuilder at The Golden Eva</p>
+              <img src={Person1} alt="Person1" />
+
+              <div className="nameJob">
+                <p>
+                  Is is a simple but neat application that gives you completely
+                  control over your personalized workout.
+                </p>
+                <h4>ANNA SMITH</h4>
+                <p>Bodybuilder at The Golden Eva</p>
+              </div>
             </article>
             <article className="col">
-              <img src="" alt="Person2" />
-              <p>
-                Is a simple but neat that allows you to completely control over
-                your workout.
-              </p>
-              <h4>JOHNSON LAKE</h4>
-              <p>Personal Trainer at Fit3000.org</p>
+              <img src={Person2} alt="Person2" />
+
+              <div className="nameJob">
+                <p>
+                  Fit Mitch is the most reliable app I have the pleaseure to
+                  work with. I recommend it for all my clients.
+                </p>
+                <h4>JOHNSON LAKE</h4>
+                <p>Personal Trainer at Fit3000.org</p>
+              </div>
             </article>
             <article className="col">
-              <img src="" alt="Person3" />
-              <p>
-                This is an amazing app. Once I installed it, I was able to
-                manage every aspect of successfully running my business.
-              </p>
-              <h4>ALEX ROSS</h4>
-              <p>Official Judge at IFBB</p>
+              <img src={Person3} alt="Person3" />
+
+              <div className="nameJob">
+                <p>
+                  This is an amazing app. Once I installed it, I was able to
+                  manage every aspect of successfully running my business.
+                </p>
+                <h4>ALEX ROSS</h4>
+                <p>Official Judge at IFBB</p>
+              </div>
             </article>
           </div>
 
